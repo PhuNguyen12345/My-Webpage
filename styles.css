@@ -1,0 +1,44 @@
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Styling the header */
+header {
+    background-color: #4CAF50;
+}
+
+/* Styling the nav */
+nav {
+    background-color: #79e5f9
+}
+
+/* Styling the main */
+main {
+    background-color: #f4f4f4;
+    font-size: 18px;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #c1fcf6;
+}
+
+/* Styling the list items */
+li {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Styling the h1 */
+h1 {
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+}
+
+/* Styling the paragraph */
+p {
+    line-height: 1.6;
+}

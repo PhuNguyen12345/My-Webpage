@@ -1,0 +1,43 @@
+/**asd
+Change the nav element to use inline-block and have a width of about 80%.
+**/
+nav {
+    display: inline-block;
+    width: 80%;
+}
+/**
+Use a descendent selector to style only the image in the nav to have a width of about 10%.
+**/
+nav img {
+    width: 10%
+}
+
+/**
+Style the grid class to use a two column grid where each column is approximately 40%.   Don't forget that to style a class element your selector should start with a period.
+**/
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 40%); /**2 column grid - 40%  **/
+    gap: 10px; /** khoang cach hang va cot **/ 
+}
+/** 
+Use the descendent selector to style only the images in the grid class to have a width of 100%.  
+**/
+.grid img {
+    width: 100%;
+}
+
+/**
+Go back and adjust the grid class again.  Play with the justify-content, align-items, and row-gap property values to copy the look of the screenshots above.
+**/ 
+.flex {
+    display: flex;
+    flex-wrap: wrap; /** Cho phep cac muc trong flex xuong dong   **/
+    justify-content: space-between; /** Can chinh cac muc giua hang va cot  **/
+}
+
+
+
+
+

@@ -1,3 +1,96 @@
+/* Styling the body */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+/* Styling the header */
+header {
+    background-color: #4CAF50;
+}
+
+/* Styling the nav */
+nav {
+    background-color: #79e5f9
+}
+
+/* Styling the main */
+main {
+    background-color: #f4f4f4;
+    font-size: 18px;
+}
+
+/* Styling the footer */
+footer {
+    background-color: #c1fcf6;
+}
+
+/* Styling the list items */
+li {
+    display: inline-block;
+    width: 100px;
+}
+
+/* Styling the h1 */
+h1 {
+    text-align: center;
+    font-family: 'Verdana', sans-serif;
+    color: #333;
+}
+
+/* Styling the paragraph */
+p {
+    line-height: 1.6;
+}
+
+/* Parent Element */ 
+/*
+- Step 1: 
+    Set display to grid 
+- Step 2: 
+    Set grid-template-columns to number and size of columns
+- Step 3: 
+    Set justify-content
+
+*/
+/* One grid column */
+/*
+div {
+    display: grid;
+    grid-template-columns: 500px;
+} */
+/* 2 grid column
+div {
+    display: grid;
+    grid-template-columns: 50% 50%;
+} */ 
+
+/* 3 grid column */
+div {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+
+a{ 
+    display: block;
+    font-weight: bold;
+    color: #79e5f9;
+    background-color: #a8af4c;
+    width: 200px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+
+
+
 /**asd
 Change the nav element to use inline-block and have a width of about 80%.
 **/
@@ -36,8 +129,64 @@ Go back and adjust the grid class again.  Play with the justify-content, align-i
     flex-wrap: wrap; /** Cho phep cac muc trong flex xuong dong   **/
     justify-content: space-between; /** Can chinh cac muc giua hang va cot  **/
 }
+.skip-link {
+    position: absolute;
+    top: -40px; 
+    left: 0; 
+    background: #f4f4f4;
+    color: #a8af4c;
+    padding: 8px; 
+    text-decoration: none;
+}
+.skip-link:focus {
+    top: 10px; 
+}
 
+/* Navigator bar */ 
+nav ul {
+    display: flex;
+    list-style-type: none;
+    background-color: #333;
+    padding: 0;
+    margin: 0;
+}
 
+nav ul li {
+    margin: 0;
+    padding: 10px 20px; 
+}
 
+nav ul li a {
+    color:white; 
+    text-decoration: none;
+    font-size: 1.1em;
+}
 
+nav ul li a:hover {
+    color: #ffb300; 
+}
 
+/* Image gallery */ 
+.image-gallery, .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px; 
+    padding: 20px; 
+}
+
+/* box model styles for image */ 
+img {
+    width: 100%; 
+    border: 2px solid #ddd;
+    padding: 5px;
+    border-radius: 8px ;
+}
+
+/* Flexbox for header */ 
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #c1fcf6;
+}
